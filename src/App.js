@@ -3,7 +3,7 @@
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
 import './App.css'
 import ExpensePage from './pages/expense-tracker/ExpensePage.js';
-import HomeImage from "../src/Images/expense.png"
+import HomeImage from "../src/Images/new.png"
 import Authentication from './pages/auth/Authentication.js';
 function App() {
   const backgroundImageStyle = {
@@ -14,7 +14,7 @@ function App() {
     minHeight: '100vh',
   };
   return (
-    <div  className="App">
+    <div style={backgroundImageStyle}  className="App">
      
       <Router>
         <Routes>

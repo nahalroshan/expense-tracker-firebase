@@ -1,7 +1,7 @@
 import React from "react";
 import { auth, provider } from "../../config/firebase-config";
 import { signInWithPopup } from "firebase/auth";
-import HomeImage from '../../Images/expense.png'
+import HomeImage from '../../Images/new.png'
 import { useNavigate } from "react-router-dom";
 function Authentication() {
   const backgroundImageStyle = {
@@ -29,15 +29,16 @@ function Authentication() {
   };
   return (
     <>
-    <div style={backgroundImageStyle}>
+    <div style={backgroundImageStyle} >
       
     
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center  items-center">
+        <div class=" mt-28 md:mt-40">
         <button
           onClick={signInWithGoogle}
           type="button"
           
-          class="text-white mt-96 bg-[#989999] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2"
+          class="text-white mt-96 bg-gradient-to-r from-amber-300 to-violet-500 hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2"
         >
           <svg
             class="w-4 h-4 mr-2"
@@ -54,6 +55,8 @@ function Authentication() {
           </svg>
           Sign in with Google
         </button>
+        </div>
+        
       </div>
 
       </div>
